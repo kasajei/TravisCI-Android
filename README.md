@@ -1,4 +1,4 @@
-TravisCI-Android : Dev2 Branch
+TravisCI-Android
 ================
 
 Sample Android Application for Travis CI
