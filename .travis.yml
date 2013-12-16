@@ -25,5 +25,8 @@ before_install:
   - emulator -avd test -no-skin -no-audio -no-window &
 
 before_script:
-  - cd [PROJECT ROOT]/Tests/
 #  - ./wait_for_emulator
+
+script:
+  - sh -c 'cd Tests'
+  - ant test
