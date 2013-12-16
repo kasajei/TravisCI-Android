@@ -3,7 +3,8 @@ package com.kasajei.TravisCI_Android;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.test.ActivityInstrumentationTestCase2;
-import junit.framework.Assert;
+import com.jayway.android.robotium.solo.Solo;
+
 
 /**
  * This is a simple framework for a test of an Application.  See
@@ -19,14 +20,14 @@ import junit.framework.Assert;
 @TargetApi(Build.VERSION_CODES.CUPCAKE)
 public class MyActivityTest extends ActivityInstrumentationTestCase2<MyActivity> {
 
+    private Solo solo;
     public MyActivityTest() {
         super("com.kasajei.TravisCI_Android", MyActivity.class);
     }
 
     public void testSimpleMathTest() throws Exception {
-        int a = 10;
-        int b = 10;
-        Assert.assertEquals(a+b, 20);
-        Assert.assertNotSame(a+b, 21);
+        assertTrue(true);
     }
+
+
 }
