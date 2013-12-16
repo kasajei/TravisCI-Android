@@ -1,4 +1,7 @@
 language: java
+branches:
+  only:
+    - master
 before_install:
   # download the latest android sdk and unzip
   - wget http://dl.google.com/android/android-sdk_r18-linux.tgz
