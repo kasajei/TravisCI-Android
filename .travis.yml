@@ -29,4 +29,4 @@ before_script:
   - ./wait_for_emulator
 
 script:
-  - mvn install -Pintegration-tests -Dandroid.device=test
+  - ant test
