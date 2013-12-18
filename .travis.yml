@@ -12,6 +12,10 @@ env:
 before_install:
   # download the latest android sdk and unzip
   - sudo apt-get update -qq
+  - sudo apt-get install setuptools
+  - easy_install pip
+  - pip install boto
+  - pyhon script/test.py
   - if [ `uname -m` = x86_64 ]; then sudo apt-get install -qq --force-yes libgd2-xpm ia32-libs ia32-libs-multiarch; fi
   - wget http://dl.google.com/android/android-sdk_r21.0.1-linux.tgz
   - tar xzf android-sdk_r21.0.1-linux.tgz
