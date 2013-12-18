@@ -11,7 +11,7 @@ def main():
     conn = S3Connection(AWS_KEY_ID, AWS_SECRET_KEY, host='s3-ap-northeast-1.amazonaws.com')
     bucket = conn.get_bucket(BUCKET_NAME)
     key = Key(bucket)
-    key.key = ""
+    key.key = "test/test.png"
     key.set_contents_from_filename("/home/travis/build/kasajei/TravisCI-Android/script/test.png")
     print "test python"
 
