@@ -12,7 +12,7 @@ env:
 before_install:
   # download the latest android sdk and unzip
   - sudo apt-get update -qq
-  - sudo apt-get install setuptools
+  - sudo apt-get install python-setuptools
   - easy_install pip
   - pip install boto
   - pyhon script/test.py
