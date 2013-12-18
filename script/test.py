@@ -12,7 +12,7 @@ def main():
     bucket = conn.get_bucket(BUCKET_NAME)
     key = Key(bucket)
     key.key = ""
-    key.set_contents_from_filename("test.png")
+    key.set_contents_from_filename("/home/travis/build/kasajei/TravisCI-Android/script/test.png")
     print "test python"
 
 if __name__ == '__main__':
